@@ -1,6 +1,6 @@
 
 import React, { Component, Fragment } from 'react';
-import './bootswatch.css';
+import './cyborg.css';
 import Buscador from './Buscador';
 import Resultado from './Resultado';
 
@@ -57,7 +57,7 @@ console.log(pagina)
 
 
   consultarApi = () => {
-    const imagenesPorPagina = 10;
+    const imagenesPorPagina = 20;
     const key = '26064192-0694e3873a08214aeb73bf20d';
     const terminoBusqueda = this.state.termino;
     const pagina = this.state.pagina;
@@ -88,11 +88,11 @@ console.log(pagina)
 
   render() {
     return (
-      <div className='app container arriba'>
+      <div className='container arriba justify-content-center mt-6'>
         
-        <div className='jumbotron'>
+        <div className='jumbotron '>
           
-        <p className='lead text-center'>Buscador de imágenes</p>
+        <h1 className='lead text-center m-5'>Buscador de imágenes</h1>
           <Buscador
             //envía prop desde App a Buscador
             //mensaje = "envía prop de App a Buscador";

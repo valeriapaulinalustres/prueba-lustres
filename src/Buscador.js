@@ -18,14 +18,16 @@ class Buscador extends Component {
         return (
             <Fragment>
 
-                <form onSubmit={this.buscarSesion}>
-                    <div className='row' >
-                        <div className='form-group col-md-8'>
-                            <input type="text" placeholder="ingrese su búsqueda" ref={this.busquedaRef} className="form-control form-control-lg"></input>
+                <form className='container' onSubmit={this.buscarSesion}>
+                    <div className='d-flex flex-row justify-content-center' >
+
+
+                        <div className='form-group col-md-10 m-2'>
+                            <input type="text" placeholder="ingrese su búsqueda" ref={this.busquedaRef} className="m-2 form-control form-control-lg"></input>
 
                         </div>
-                        <div className='form-group col-md-4'>
-                            <input type="submit" value="Buscar" className='btn btn-lg btn-danger btn-block'></input>
+                        <div className='form-group col-md-2 m-2 '>
+                            <input type="submit" value="Buscar" className='m-2 btn btn-lg btn-danger align-items-center'></input>
 
                         </div>
                     </div>
